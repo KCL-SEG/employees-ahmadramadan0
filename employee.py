@@ -37,8 +37,8 @@ class Employee:
         else:
             if self.contracts > 0:
                 return f'{self.name} works on a contract of {self.hours} hours at {self.hourly_wage}/hour and receives a commission for {self.contracts} contract(s) at {self.commission_per_contract}/contract. Their total pay is {self.get_pay()}.'
-            # elif self.bonus_commission > 0:
-            #     return f'{self.name} works on a contract of {self.hours} hours at {self.hourly_wage}/hour and receives a bonus commission of {self.bonus_commission}. Their total pay is {self.get_pay()}.'
+            elif self.bonus_commission > 0:
+                return f'{self.name} works on a contract of {self.hours} hours at {self.hourly_wage}/hour and receives a bonus commission of {self.bonus_commission}. Their total pay is {self.get_pay()}.'
             else:
                 return f'{self.name} works on a contract of {self.hours} hours at {self.hourly_wage}/hour. Their total pay is {self.get_pay()}.'
 
